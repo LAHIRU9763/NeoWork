@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PositiveTestSuite" verbose="1">
+
+	<test name="PositiveTest">
+
+		<parameter name="username" value="hapneo"></parameter>
+		<parameter name="password" value="123"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+
+			<class name="com.alaqahtml5.qa.loginpagetests.PositiveLogInTests" />
+			<class name="com.alaqahtml5.qa.logoutpagetests.LogOutTest" />
+
+
+		</classes>
+	</test>
+
+</suite>

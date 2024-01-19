@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WindowsTestSuite" verbose="1">
+
+	<test name="WindowsTests">
+		<classes>
+			<class name="com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest" />
+		</classes>
+	</test>
+
+</suite>

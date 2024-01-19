@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CheckboxesTestSuite" verbose="1">
+	
+	<test name="CheckboxesTests">
+		<parameter name="username" value="hapneo"></parameter>
+		<parameter name="password" value="123"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+	
+		<classes>
+			<class name="com.herokuapp.theinternet.checkboxespagetests.CheckboxesTests" />
+		</classes>
+	</test>
+	
+</suite>

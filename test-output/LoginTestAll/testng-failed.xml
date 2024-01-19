@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [LoginTestAll]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="LogInTestALL-CH(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.alaqahtml5.qa.loginpagetests.NegativeLogInTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="logInTest"/>
+        </methods>
+      </class> <!-- com.alaqahtml5.qa.loginpagetests.NegativeLogInTests -->
+    </classes>
+  </test> <!-- LogInTestALL-CH(failed) -->
+</suite> <!-- Failed suite [LoginTestAll] -->

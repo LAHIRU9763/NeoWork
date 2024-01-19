@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WindowsTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="WindowsTests(failed)">
+    <classes>
+      <class name="com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest">
+        <methods>
+          <include name="lnMyAccountTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest -->
+    </classes>
+  </test> <!-- WindowsTests(failed) -->
+</suite> <!-- Failed suite [WindowsTestSuite] -->

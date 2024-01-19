@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NegativeLogInTestSuite" verbose="1">
+
+	<test name="NegativeUsernameTest-CH">
+		<parameter name="username" value="incorrectUsername"></parameter>
+		<parameter name="password" value="123"></parameter>
+		<parameter name="expectedMessage" value="User Name or Password Incorrect"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.alaqahtml5.qa.loginpagetests.NegativeLogInTests">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="NegativeUsernameTest-FF">
+		<parameter name="username" value="incorrectUsername"></parameter>
+		<parameter name="password" value="SuperSecretPassword!"></parameter>
+		<parameter name="expectedMessage" value="User Name or Password Incorrect"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.alaqahtml5.qa.loginpagetests.NegativeLogInTests">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="NegativePasswordTest-CH">
+		<parameter name="username" value="KusalUA"></parameter>
+		<parameter name="password" value="1234"></parameter>
+		<parameter name="expectedMessage" value="User Name or Password Incorrect"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.alaqahtml5.qa.loginpagetests.NegativeLogInTests">
+			</class>
+		</classes>
+	</test>
+
+
+</suite>
