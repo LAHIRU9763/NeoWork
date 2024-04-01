@@ -1,7 +1,6 @@
 package com.alaqahtml5.qa.pages;
 
 import java.time.Duration;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -17,10 +16,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePageObject {
-
+	/*
+	 * protected The code is accessible in the same package and subclasses. You will
+	 * learn more about subclasses and superclasses
+	 */
 	protected WebDriver driver;
 	protected Logger log;
-	
+
 
 	public BasePageObject(WebDriver driver, Logger log) {
 		this.driver = driver;
@@ -122,7 +124,7 @@ public class BasePageObject {
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	    return driver.findElement(locator);
 	}
-	
+
 	/** Click on element with keybord key */
 	protected void pressEnter(By locator, Keys key) {
 		find(locator).sendKeys(key);
@@ -141,10 +143,7 @@ public class BasePageObject {
 		String firstWindow = driver.getWindowHandle();
 
 		Set<String> allWindows = driver.getWindowHandles();
-		Iterator<String> windowsIterator = allWindows.iterator();
-
-		while (windowsIterator.hasNext()) {
-			String windowHandle = windowsIterator.next().toString();
+		for (String windowHandle : allWindows) {
 			if (!windowHandle.equals(firstWindow)) {
 				driver.switchTo().window(windowHandle);
 				if (getCurrentPageTitle().equals(expectedTitle)) {
@@ -154,14 +153,15 @@ public class BasePageObject {
 		}
 
 	}
-	
+
+	//scrolling funtion
 	protected void scrollToBottom(By locator) {
-		
-		
+
+
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", find(locator));
 		//jsExecutor.executeScript("window.scrollBy(0, -190);");
 	}
-	
-	
+
+
 }

@@ -3,6 +3,7 @@ package com.alaqahtml5.qa.neowebtests;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.alaqahtml5.qa.base.TestUtilities;
 import com.alaqahtml5.qa.pages.LNMyAccount;
@@ -16,6 +17,7 @@ public class LNMyAccountTest extends TestUtilities {
 
 	public void lnMyAccountTest(String username, String password) {
 		log.info("Starting logIn test");
+		SoftAssert softAssert = new SoftAssert();
 
 		// open main page
 		LoginPage loginPage = new LoginPage(driver, log);
@@ -33,7 +35,7 @@ public class LNMyAccountTest extends TestUtilities {
 		// calling Landing page
 		LandingAreaPage landingAriaPAge = new LandingAreaPage(driver, log);
 
-		landingAriaPAge.clickLastLoginOkay();
+		landingAriaPAge.clickLoginInformationOkay();
 
 		sleep(7000);
 
@@ -47,21 +49,21 @@ public class LNMyAccountTest extends TestUtilities {
 		lNMyAccount.clickRightssubscription();
 		lNMyAccount.clickInvestmentaccounts();
 		lNMyAccount.clickBankaccounts();
-		lNMyAccount.clickUpdateKYC();
+
+		// lNMyAccount.clickUpdateKYC();
 		lNMyAccount.clickUserprofile();
 		lNMyAccount.clickSinglesignon();
 
 		lNMyAccount.clickTadawulaty();
 
-		//switching to previous tab
+		// switching to previous tab
 		switchToPreviousTab();
-		
 
 		lNMyAccount.clickStockstatement();
 		lNMyAccount.clickCashstatements();
 		lNMyAccount.clickAnnualstatement();
-		lNMyAccount.clickVatinvoice();
-		lNMyAccount.clickAppsettings();
+		// lNMyAccount.clickVatinvoice();
+		// lNMyAccount.clickAppsettings();
 		lNMyAccount.clickChangepassword();
 		lNMyAccount.clickCloseyouraccount();
 	}

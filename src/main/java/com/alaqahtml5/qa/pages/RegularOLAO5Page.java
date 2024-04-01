@@ -28,7 +28,7 @@ public class RegularOLAO5Page extends BasePageObject {
 		click(tAndCBtn);
 
 	}
-	
+
 	public void downLoadPdf2() {
 		waitForVisibilityOf(cDBtn, Duration.ofSeconds(100));
 		click(cDBtn);
@@ -44,7 +44,7 @@ public class RegularOLAO5Page extends BasePageObject {
 		click(cBox2);
 
 	}
-	
+
 	public void clickCon() {
 		waitForVisibilityOf(conBtn, Duration.ofSeconds(100));
 		click(conBtn);

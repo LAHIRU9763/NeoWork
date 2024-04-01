@@ -9,8 +9,9 @@ import com.alaqahtml5.qa.pages.LoginPage;
 
 public class NegativeLogInTests extends TestUtilities {
 
-	@Test
+	@Test(priority = 1)
 	@Parameters({ "username", "password", "expectedMessage" })
+
 	public void logInTest(String username, String password, String expectedErrorMessage) {
 		log.info("Starting logIn test");
 

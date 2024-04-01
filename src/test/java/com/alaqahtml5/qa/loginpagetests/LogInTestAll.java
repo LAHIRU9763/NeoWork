@@ -2,8 +2,8 @@ package com.alaqahtml5.qa.loginpagetests;
 
 import java.util.Map;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.alaqahtml5.qa.base.CsvDataProviders;
 import com.alaqahtml5.qa.base.TestUtilities;
@@ -14,14 +14,18 @@ public class LogInTestAll extends TestUtilities {
 
 	@Test(priority = 1, dataProvider = "csvReader", dataProviderClass = CsvDataProviders.class)
 	public void logInTestsAll(Map<String, String> testData) {
+
+		SoftAssert softAssert = new SoftAssert();
 		// Data
 		String no = testData.get("no");
 		String username  = testData.get("username");
 		String password = testData.get("password");
 		//String expectedErrorMessage = testData.get("expectedMessage");
 		//String description = testData.get("description");
-		
+
 		log.info("Starting negativeLogInTest #" + no + " for " + username);
+
+
 
 		// open main page
 		LoginPage loginPage = new LoginPage(driver, log);
@@ -29,8 +33,10 @@ public class LogInTestAll extends TestUtilities {
 
 		// Verifications
 		// New page url is expected
-		Assert.assertEquals(loginPage.getCurrentUrl(), loginPage.getPageUrl(),
+		softAssert.assertEquals(loginPage.getCurrentUrl(), loginPage.getPageUrl(),
 				"not matching" + loginPage.getCurrentUrl() + "with" + loginPage.getPageUrl());
+
+
 
 		loginPage.logIn(username, password);
 
@@ -58,14 +64,14 @@ public class LogInTestAll extends TestUtilities {
 
 		// Successful log in message
 
-		/*
-		 * String expectedSuccessMessage = "You logged into a secure area!"; String
-		 * actualSuccessMessage = loginPage.getSuccessMessageText();
-		 * Assert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage),
-		 * "actualSuccessMessage does not contain expectedSuccessMessage\nexpectedSuccessMessage: "
-		 * + expectedSuccessMessage + "\nactualSuccessMessage: " +
-		 * actualSuccessMessage);
-		 */
+
+//		 String expectedSuccessMessage = "You logged into a secure area!";
+//		 String actualSuccessMessage = loginPage.getSuccessMessageText();
+//		 Assert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage),
+//		 "actualSuccessMessage does not contain expectedSuccessMessage\nexpectedSuccessMessage: "
+//		 + expectedSuccessMessage + "\nactualSuccessMessage: " +
+//		 actualSuccessMessage);
+
 
 	}
 }

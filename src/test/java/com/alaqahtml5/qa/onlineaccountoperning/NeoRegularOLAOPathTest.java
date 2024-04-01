@@ -29,9 +29,9 @@ public class NeoRegularOLAOPathTest extends TestUtilities {
 		loginPage.clickOpenAccount();
 		/*
 		 * System.out.println("step1");
-		 * 
+		 *
 		 * sleep(3000);
-		 * 
+		 *
 		 * System.out.println("wait for 300o sec");
 		 */
 		RegularOLAO1Page regularOLAO1Page = new RegularOLAO1Page(driver, log);
@@ -53,8 +53,7 @@ public class NeoRegularOLAOPathTest extends TestUtilities {
 		regularOLAO4Page.sendPinNum3();
 		regularOLAO4Page.sendPinNum4();
 		regularOLAO4Page.clickCon();
-		
-		
+
 		RegularOLAO5Page regularOLAO5Page = new RegularOLAO5Page(driver, log);
 		regularOLAO5Page.downLoadPdf1();
 		sleep(5000);
@@ -63,11 +62,10 @@ public class NeoRegularOLAOPathTest extends TestUtilities {
 		regularOLAO5Page.checkOnCBox2();
 		regularOLAO5Page.clickCon();
 
-		
-		
 		RegularOLAO6Page regularOLAO6Page = new RegularOLAO6Page(driver, log);
 		regularOLAO6Page.selectCOB();
 		regularOLAO6Page.typeNOD();
+		// regularOLAO6Page.typeThirdName();
 		regularOLAO6Page.typeDOE();
 		regularOLAO6Page.selectPosition();
 		regularOLAO6Page.selectANWTextBox();
@@ -90,13 +88,14 @@ public class NeoRegularOLAOPathTest extends TestUtilities {
 		regularOLAO6Page.selectImmigrantVisatextBox();
 		regularOLAO6Page.selectUsPersonSelection();
 		regularOLAO6Page.clickCreate();
-		//sleep(5000);
+		// sleep(5000);
 		RegularOLAO7Page regularOLAO7Page = new RegularOLAO7Page(driver, log);
 		regularOLAO7Page.sendOLAOUsername(9, 99);
 		regularOLAO7Page.enterPw();
+		sleep(5000);
 		regularOLAO7Page.clickContinue();
 		regularOLAO7Page.clickBackToLogin();
-	
+
 ////a[@id='lnkOnlineAcc']id
 //		loginPage.clickRegistaion();
 //		RegularOLAO regularOLAO = new RegularOLAO(driver, log);
@@ -104,3 +103,5 @@ public class NeoRegularOLAOPathTest extends TestUtilities {
 
 	}
 }
+
+//lahiruh_21_1_2024

@@ -1,9 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="NegativeLogInTestSuite" verbose="1">
-
+	
+	<listeners>
+		<listener class-name="com.alaqahtml5.qa.base.TestListener"></listener>
+	</listeners>
+	
+	
+	
 	<test name="NegativeUsernameTest-CH">
-		<parameter name="username" value="incorrectUsername"></parameter>
+		<parameter name="username" value=""></parameter>
 		<parameter name="password" value="123"></parameter>
 		<parameter name="expectedMessage" value="User Name or Password Incorrect"></parameter>
 		<parameter name="browser" value="chrome"></parameter>

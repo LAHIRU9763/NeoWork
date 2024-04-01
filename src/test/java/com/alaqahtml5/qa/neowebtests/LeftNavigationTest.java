@@ -32,7 +32,7 @@ public class LeftNavigationTest extends TestUtilities {
 		// calling Landing page
 		LandingAreaPage landingAriaPAge = new LandingAreaPage(driver, log);
 
-		landingAriaPAge.clickLastLoginOkay();
+		landingAriaPAge.clickLoginInformationOkay();
 
 		sleep(7000);
 
@@ -44,11 +44,13 @@ public class LeftNavigationTest extends TestUtilities {
 		leftNavigationSlider.clickOrders();
 		leftNavigationSlider.clickAlerts();
 		leftNavigationSlider.clickCashTrasfer();
+		leftNavigationSlider.clickMargin();
 		leftNavigationSlider.clickmutualFunds();
+		leftNavigationSlider.clickMyProfile();
 		leftNavigationSlider.clickpriceTradeStatus();
 		leftNavigationSlider.clickHelpCenter();
 		leftNavigationSlider.clickHelpCenterClose();
-		leftNavigationSlider.clickMyProfile();
+
 		leftNavigationSlider.clicklogOut();
 
 	}

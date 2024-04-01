@@ -4,9 +4,7 @@ import java.time.Duration;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class RegularOLAO6Page extends BasePageObject {
 
@@ -15,6 +13,11 @@ public class RegularOLAO6Page extends BasePageObject {
 
 	private By dropDownSA = By.cssSelector(
 			"body.overflow-hidden.theme2:nth-child(2) div.visibility-hidden.ember-application:nth-child(2) div.ember-view:nth-child(8) div.ember-view div.modal-popup-frame.modal-popup-symbol-search.popup-animation div.dropdown-menu-height.dropdown-mode-full.container-back-color.border-all.rounded-8.shadow.kyc-dropdown-filter-width-mobile div.y-scroll.full-width div.layout-container.full-width.cursor-pointer.dropdown-option.line-height-x-l:nth-child(1) div.layout-col-24.ellipsis > div.ellipsis");
+
+	private By thirdNTextBox = By.xpath(
+			"/html[1]/body[1]/div[2]/div[1]/div[2]/div[7]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[2]/input[1]");
+
+
 	private By nODTextBox = By.id("nod");
 	private By doeTextBox = By.xpath(
 			"/html[1]/body[1]/div[2]/div[1]/div[2]/div[7]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]");
@@ -155,6 +158,11 @@ public class RegularOLAO6Page extends BasePageObject {
 
 	}
 
+	/*
+	 * public void typeThirdName() { waitForVisibilityOf(thirdNTextBox,
+	 * Duration.ofSeconds(100)); type("ThirdName", thirdNTextBox); }
+	 */
+
 	public void typeDOE() {
 		waitForVisibilityOf(doeTextBox, Duration.ofSeconds(100));
 		scrollToBottom(doeTextBox);
@@ -294,8 +302,8 @@ public class RegularOLAO6Page extends BasePageObject {
 	public void typeToIPP1_2() {
 		waitForVisibilityOf(cIPTextBox, Duration.ofSeconds(100));
 		scrollToBottom(cIPTextBox);
-		type("105", cIPTextBox);
-		type("105", yIPTextBox);
+		type("100", cIPTextBox);
+		type("100", yIPTextBox);
 
 	}
 
@@ -330,7 +338,7 @@ public class RegularOLAO6Page extends BasePageObject {
 		// click(uSPersonTextBoxSelection);
 
 	}
-	
+
 
 	/** Perform scroll to the bottom */
 //	public void scrollToBottom() {

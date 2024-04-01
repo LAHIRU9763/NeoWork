@@ -28,14 +28,16 @@ public class NeoWebLoginTest extends TestUtilities {
 		sleep(7000);
 		// execute log in
 		loginPage.logIn(username, password);
+		
+	takeScreenshot("testtttingggggggggggggg");
 
 		// calling Landing page
 		LandingAreaPage landingAriaPAge = new LandingAreaPage(driver, log);
 
-		landingAriaPAge.clickLastLoginOkay();
+		landingAriaPAge.clickLoginInformationOkay();
 
 		sleep(7000);
-		
+
 		landingAriaPAge.isDfnLogoButtonVisible();
 
 	}

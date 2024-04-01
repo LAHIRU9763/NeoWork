@@ -1,22 +1,36 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="PositiveTestSuite" verbose="1">
+<suite name="NeoUATTestSuite" verbose="1">
+	<listeners>
+		<listener class-name="com.alaqahtml5.qa.base.TestListener"></listener>
+	</listeners>
+	<test name="NeoUAT">
 
-	<test name="PositiveTest">
 
-		<parameter name="username" value="hapneo"></parameter>
+		<parameter name="username" value="donttake123"></parameter>
 		<parameter name="password" value="123"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 
 			<class
-			name="com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest"/>
-			 <!-- <class name="com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest" /> -->
-
-
-			<!--<class name="com.alaqahtml5.qa.neowebtests.LNMyAccountTest" /> -->
-
-
+				name="com.alaqahtml5.qa.logoutpagetests.LogOutTest" />
+			<class
+				name="com.alaqahtml5.qa.loginpagetests.SimpleLoginTest" />
+			 
+			<class
+				name="com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest" /> 
+			<class
+				name="com.alaqahtml5.qa.neowebtests.LeftNavigationTest" />
+			<class
+				name="com.alaqahtml5.qa.neowebtests.LNMyAccountTest" />
+			<class
+				name="com.alaqahtml5.qa.neowebtests.NeoWebLoginTest" />
+			<class
+				name="com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest" />
+			<class
+				name="com.alaqahtml5.qa.neowebtests.LeftNavigationTest" />
+			<class
+				name="com.alaqahtml5.qa.loginpagetests.AppTitleVerificationTest" /> 
 		</classes>
 	</test>
 

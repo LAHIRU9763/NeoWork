@@ -1,8 +1,8 @@
 package com.alaqahtml5.qa.logoutpagetests;
 
-import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.alaqahtml5.qa.base.TestUtilities;
 import com.alaqahtml5.qa.pages.LandingAreaPage;
@@ -14,6 +14,7 @@ public class LogOutTest extends TestUtilities {
 	@Parameters({ "username", "password" })
 
 	public void logOutFromHtml5(String username, String password) {
+		SoftAssert softAssert = new SoftAssert();
 		log.info("Starting logIn test");
 
 		// open main page
@@ -22,7 +23,7 @@ public class LogOutTest extends TestUtilities {
 
 		// Verifications
 		// New page url is expected
-		Assert.assertEquals(loginPage.getCurrentUrl(), loginPage.getPageUrl(),
+		softAssert.assertEquals(loginPage.getCurrentUrl(), loginPage.getPageUrl(),
 				"not matching" + loginPage.getCurrentUrl() + "with" + loginPage.getPageUrl());
 
 		// execute log in
@@ -30,14 +31,20 @@ public class LogOutTest extends TestUtilities {
 		// calling Landing page
 		LandingAreaPage landingAriaPAge = new LandingAreaPage(driver, log);
 
-		// wait for DFN logo to visible
-		landingAriaPAge.waitForDfnLogo();
-
+		// click information Okay Button on landing page
+		landingAriaPAge.clickLoginInformationOkay();
+	
+		 
 		// verify of logout button is displaying
-		Assert.assertTrue(landingAriaPAge.isDfnLogoButtonVisible(), "LogOut Button is not visible.");
+		softAssert.assertTrue(landingAriaPAge.isDfnLogoButtonVisible(), "LogOut Button is not visible.");
 
-		// Click on logout Button
+		// Click on logout Button 
 		landingAriaPAge.clickLogoutBtn();
+		
+	
 
 	}
 }
+
+
+//lahiruH 24/01/2024

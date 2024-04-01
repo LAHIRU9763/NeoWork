@@ -38,7 +38,7 @@ public class RegularOLAO3Page extends BasePageObject {
 		Random r = new Random();
 
 		long result = r.nextInt() + low;
-		System.out.println(result);
+		System.out.println("nextInt checke    :   " + result);
 		type(Long.toString(result), ninIqaNumberBox);
 		return result;
 

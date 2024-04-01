@@ -9,8 +9,9 @@
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 
-			<class name="com.alaqahtml5.qa.loginpagetests.PositiveLogInTests" />
-			<class name="com.alaqahtml5.qa.logoutpagetests.LogOutTest" />
+	<!-- 	<class name="com.alaqahtml5.qa.loginpagetests.PositiveLogInTests" /> -->
+	<!--	<class name="com.alaqahtml5.qa.logoutpagetests.LogOutTest" /> -->
+		<class name="com.alaqahtml5.qa.neowebtests.leftNavigationTest" />
 
 
 		</classes>

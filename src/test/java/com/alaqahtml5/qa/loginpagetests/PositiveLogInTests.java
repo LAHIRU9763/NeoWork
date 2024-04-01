@@ -8,6 +8,12 @@ import com.alaqahtml5.qa.base.TestUtilities;
 import com.alaqahtml5.qa.pages.LandingAreaPage;
 import com.alaqahtml5.qa.pages.LoginPage;
 
+/*Java Inheritance (Subclass and Superclass)
+In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
+
+subclass (child) - the class that inherits from another class
+superclass (parent) - the class being inherited from
+To inherit from a class, use the extends keyword.*/
 public class PositiveLogInTests extends TestUtilities {
 
 	@Test(priority = 1)
@@ -31,11 +37,13 @@ public class PositiveLogInTests extends TestUtilities {
 		// calling Landing page
 		LandingAreaPage landingAriaPAge = new LandingAreaPage(driver, log);
 
-		// wait for DFN logo to visible
-		landingAriaPAge.waitForDfnLogo();
+		// click information Okay Button on landing page
+		landingAriaPAge.clickLoginInformationOkay();
 
 		// verify of logout button is displaying
 		Assert.assertTrue(landingAriaPAge.isDfnLogoButtonVisible(), "LogOut Button is not visible.");
 
 	}
 }
+
+//lahiruH 24/01/2024

@@ -8,11 +8,65 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">49,691</td><td></td><td></td></tr>
+<tr><th colspan="8">NeoUATTestSuite</th></tr>
+<tr><td><a href="#t0">NeoUAT</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">333,181</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest</td><td><a href="#m0">navigateToRegulerOLAO</a></td><td rowspan="1">1705559702154</td><td rowspan="1">43950</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NeoUATTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NeoUAT &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.alaqahtml5.qa.loginpagetests.SimpleLoginTest</td><td><a href="#m0">simpleLoginTest</a></td><td rowspan="1">1711959193003</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">com.alaqahtml5.qa.logoutpagetests.LogOutTest</td><td><a href="#m1">logOutFromHtml5</a></td><td rowspan="1">1711959171258</td><td rowspan="1">21723</td></tr><tr class="failedeven"><td rowspan="1">com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest</td><td><a href="#m2">lnMyAccountTest</a></td><td rowspan="1">1711959197146</td><td rowspan="1">28898</td></tr><tr class="failedodd"><td rowspan="1">com.alaqahtml5.qa.neowebtests.LNMyAccountTest</td><td><a href="#m3">lnMyAccountTest</a></td><td rowspan="1">1711959263666</td><td rowspan="1">40805</td></tr><tr class="failedeven"><td rowspan="1">com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest</td><td><a href="#m4">navigateToRegulerOLAO</a></td><td rowspan="1">1711959334104</td><td rowspan="1">145420</td></tr><tr><th colspan="4">NeoUAT &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.alaqahtml5.qa.loginpagetests.AppTitleVerificationTest</td><td><a href="#m5">apptitleVerification</a></td><td rowspan="1">1711959483660</td><td rowspan="1">15725</td></tr><tr class="passedodd"><td rowspan="1">com.alaqahtml5.qa.neowebtests.LeftNavigationTest</td><td><a href="#m6">leftNavigationTest</a></td><td rowspan="1">1711959230255</td><td rowspan="1">29298</td></tr><tr class="passedeven"><td rowspan="1">com.alaqahtml5.qa.neowebtests.NeoWebLoginTest</td><td><a href="#m7">logInTest</a></td><td rowspan="1">1711959308500</td><td rowspan="1">21537</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest#navigateToRegulerOLAO</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>NeoUAT</h2><h3 id="m0">com.alaqahtml5.qa.loginpagetests.SimpleLoginTest#simpleLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Method simpleLoginTest requires 1 parameters but 2 were supplied in the @Test annotation.
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.alaqahtml5.qa.logoutpagetests.LogOutTest#logOutFromHtml5</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>donttake123</td><td>123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .margin-auto.layout-container.font-5x-l.icon-logout-2 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\lahiruh\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60710}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60710/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da90192b64894ffb54bff24b0d19940e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitFor(BasePageObject.java:87)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:98)
+	at com.alaqahtml5.qa.pages.BasePageObject.click(BasePageObject.java:49)
+	at com.alaqahtml5.qa.pages.LandingAreaPage.clickLogoutBtn(LandingAreaPage.java:51)
+	at com.alaqahtml5.qa.logoutpagetests.LogOutTest.logOutFromHtml5(LogOutTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest#lnMyAccountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>donttake123</td><td>123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	New page source doesn&apos;t contain expected text expected [true] but found [false]
+	at com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest.lnMyAccountTest(EdaaPageOpenTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.alaqahtml5.qa.neowebtests.LNMyAccountTest#lnMyAccountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>donttake123</td><td>123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .layout-container:nth-child(15) (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\lahiruh\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60844}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60844/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a8b3184ab3e24abda4d63d71054b381
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitFor(BasePageObject.java:87)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:98)
+	at com.alaqahtml5.qa.pages.LNMyAccount.clickChangepassword(LNMyAccount.java:153)
+	at com.alaqahtml5.qa.neowebtests.LNMyAccountTest.lnMyAccountTest(LNMyAccountTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest#navigateToRegulerOLAO</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: body.overflow-hidden.theme2:nth-child(2) div.visibility-hidden.ember-application:nth-child(2) div.ember-view:nth-child(8) div.full-screen-container:nth-child(7) div.col-xs-12.full-height.online-acc-opening.z-index-100 div.layout-container.full-height.full-width.app-back-color div.layout-col-14.container-fade-back-color.full-height div.layout-container.margin-auto:nth-child(2) div.layout-container.full-width.margin-auto.full-height div.layout-container.full-width.full-height div.layout-container.overflow-hidden.float-left.full-width:nth-child(2) div.ember-view div.full-width.full-height.layout-container div.layout-row:nth-child(2) div.layout-container.full-width.pad-l-tb &gt; button.border-none.form-btn.font-x-m.font-700.full-width.letter-space-xxl.submit-btn-disable (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\lahiruh\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60931/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07b8c285e2c798a4823d4de22ba05342
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitFor(BasePageObject.java:87)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:98)
+	at com.alaqahtml5.qa.pages.RegularOLAO7Page.clickContinue(RegularOLAO7Page.java:55)
+	at com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest.navigateToRegulerOLAO(NeoRegularOLAOPathTest.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.alaqahtml5.qa.loginpagetests.AppTitleVerificationTest#apptitleVerification</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>donttake123</td><td>123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.alaqahtml5.qa.neowebtests.LeftNavigationTest#leftNavigationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>donttake123</td><td>123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.alaqahtml5.qa.neowebtests.NeoWebLoginTest#logInTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>donttake123</td><td>123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

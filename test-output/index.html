@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-NeoUATTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">NeoUATTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\lahiruh\AppData\Local\Temp\testng-eclipse--815069994\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-NeoUATTestSuite" class="navigator-link ">
+                    <span>C:\Users\lahiruh\eclipse-workspace\com.neowebqahtml5.testneo\src\test\resources\TestSuites\NeoTestSuites\NeoUATestSuites.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-NeoUATTestSuite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-NeoUATTestSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-NeoUATTestSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-NeoUATTestSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-NeoUATTestSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-NeoUATTestSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">8 methods, 5 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-NeoUATTestSuite" class="hide-methods failed suite-NeoUATTestSuite"> (hide)</a> <!-- hide-methods failed suite-NeoUATTestSuite -->
+                      <a href="#" panel-name="suite-NeoUATTestSuite" class="show-methods failed suite-NeoUATTestSuite"> (show)</a> <!-- show-methods failed suite-NeoUATTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-NeoUATTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NeoUATTestSuite" title="com.alaqahtml5.qa.neowebtests.LNMyAccountTest" class="method navigator-link" hash-for-method="lnMyAccountTest(donttake123, 123)">lnMyAccountTest(donttake123, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NeoUATTestSuite" title="com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest" class="method navigator-link" hash-for-method="lnMyAccountTest(donttake123, 123)">lnMyAccountTest(donttake123, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NeoUATTestSuite" title="com.alaqahtml5.qa.logoutpagetests.LogOutTest" class="method navigator-link" hash-for-method="logOutFromHtml5(donttake123, 123)">logOutFromHtml5(donttake123, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NeoUATTestSuite" title="com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest" class="method navigator-link" hash-for-method="navigateToRegulerOLAO">navigateToRegulerOLAO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NeoUATTestSuite" title="com.alaqahtml5.qa.loginpagetests.SimpleLoginTest" class="method navigator-link" hash-for-method="simpleLoginTest">simpleLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-NeoUATTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-NeoUATTestSuite" class="hide-methods passed suite-NeoUATTestSuite"> (hide)</a> <!-- hide-methods passed suite-NeoUATTestSuite -->
+                      <a href="#" panel-name="suite-NeoUATTestSuite" class="show-methods passed suite-NeoUATTestSuite"> (show)</a> <!-- show-methods passed suite-NeoUATTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-NeoUATTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest" class="method navigator-link" hash-for-method="navigateToRegulerOLAO">navigateToRegulerOLAO</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NeoUATTestSuite" title="com.alaqahtml5.qa.loginpagetests.AppTitleVerificationTest" class="method navigator-link" hash-for-method="apptitleVerification(donttake123, 123)">apptitleVerification(donttake123, 123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NeoUATTestSuite" title="com.alaqahtml5.qa.neowebtests.LeftNavigationTest" class="method navigator-link" hash-for-method="leftNavigationTest(donttake123, 123)">leftNavigationTest(donttake123, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NeoUATTestSuite" title="com.alaqahtml5.qa.neowebtests.NeoWebLoginTest" class="method navigator-link" hash-for-method="logInTest(donttake123, 123)">logInTest(donttake123, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-NeoUATTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,10 +161,115 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-NeoUATTestSuite" class="panel NeoUATTestSuite">
+          <div class="suite-NeoUATTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="lnMyAccountTest(donttake123, 123)">
+                  </a> <!-- lnMyAccountTest(donttake123, 123) -->
+                  <span class="method-name">lnMyAccountTest</span>
+                  <span class="parameters">(donttake123,123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	New page source doesn&apos;t contain expected text expected [true] but found [false]
+	at com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest.lnMyAccountTest(EdaaPageOpenTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NeoUATTestSuite-class-failed -->
+          <div class="suite-NeoUATTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.alaqahtml5.qa.logoutpagetests.LogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOutFromHtml5(donttake123, 123)">
+                  </a> <!-- logOutFromHtml5(donttake123, 123) -->
+                  <span class="method-name">logOutFromHtml5</span>
+                  <span class="parameters">(donttake123,123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .margin-auto.layout-container.font-5x-l.icon-logout-2 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\lahiruh\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60710}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60710/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da90192b64894ffb54bff24b0d19940e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitFor(BasePageObject.java:87)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:98)
+	at com.alaqahtml5.qa.pages.BasePageObject.click(BasePageObject.java:49)
+	at com.alaqahtml5.qa.pages.LandingAreaPage.clickLogoutBtn(LandingAreaPage.java:51)
+	at com.alaqahtml5.qa.logoutpagetests.LogOutTest.logOutFromHtml5(LogOutTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NeoUATTestSuite-class-failed -->
+          <div class="suite-NeoUATTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.alaqahtml5.qa.neowebtests.LNMyAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="lnMyAccountTest(donttake123, 123)">
+                  </a> <!-- lnMyAccountTest(donttake123, 123) -->
+                  <span class="method-name">lnMyAccountTest</span>
+                  <span class="parameters">(donttake123,123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .layout-container:nth-child(15) (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\lahiruh\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60844}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60844/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a8b3184ab3e24abda4d63d71054b381
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitFor(BasePageObject.java:87)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:98)
+	at com.alaqahtml5.qa.pages.LNMyAccount.clickChangepassword(LNMyAccount.java:153)
+	at com.alaqahtml5.qa.neowebtests.LNMyAccountTest.lnMyAccountTest(LNMyAccountTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NeoUATTestSuite-class-failed -->
+          <div class="suite-NeoUATTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.alaqahtml5.qa.loginpagetests.SimpleLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleLoginTest">
+                  </a> <!-- simpleLoginTest -->
+                  <span class="method-name">simpleLoginTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method simpleLoginTest requires 1 parameters but 2 were supplied in the @Test annotation.
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NeoUATTestSuite-class-failed -->
+          <div class="suite-NeoUATTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,105 +278,284 @@
                   <a name="navigateToRegulerOLAO">
                   </a> <!-- navigateToRegulerOLAO -->
                   <span class="method-name">navigateToRegulerOLAO</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: body.overflow-hidden.theme2:nth-child(2) div.visibility-hidden.ember-application:nth-child(2) div.ember-view:nth-child(8) div.full-screen-container:nth-child(7) div.col-xs-12.full-height.online-acc-opening.z-index-100 div.layout-container.full-height.full-width.app-back-color div.layout-col-14.container-fade-back-color.full-height div.layout-container.margin-auto:nth-child(2) div.layout-container.full-width.margin-auto.full-height div.layout-container.full-width.full-height div.layout-container.overflow-hidden.float-left.full-width:nth-child(2) div.ember-view div.full-width.full-height.layout-container div.layout-row:nth-child(2) div.layout-container.full-width.pad-l-tb &gt; button.border-none.form-btn.font-x-m.font-700.full-width.letter-space-xxl.submit-btn-disable (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\lahiruh\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60931/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07b8c285e2c798a4823d4de22ba05342
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitFor(BasePageObject.java:87)
+	at com.alaqahtml5.qa.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:98)
+	at com.alaqahtml5.qa.pages.RegularOLAO7Page.clickContinue(RegularOLAO7Page.java:55)
+	at com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest.navigateToRegulerOLAO(NeoRegularOLAOPathTest.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-NeoUATTestSuite-class-failed -->
+          <div class="suite-NeoUATTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.alaqahtml5.qa.neowebtests.LeftNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="leftNavigationTest(donttake123, 123)">
+                  </a> <!-- leftNavigationTest(donttake123, 123) -->
+                  <span class="method-name">leftNavigationTest</span>
+                  <span class="parameters">(donttake123,123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NeoUATTestSuite-class-passed -->
+          <div class="suite-NeoUATTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.alaqahtml5.qa.loginpagetests.AppTitleVerificationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="apptitleVerification(donttake123, 123)">
+                  </a> <!-- apptitleVerification(donttake123, 123) -->
+                  <span class="method-name">apptitleVerification</span>
+                  <span class="parameters">(donttake123,123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NeoUATTestSuite-class-passed -->
+          <div class="suite-NeoUATTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.alaqahtml5.qa.neowebtests.NeoWebLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logInTest(donttake123, 123)">
+                  </a> <!-- logInTest(donttake123, 123) -->
+                  <span class="method-name">logInTest</span>
+                  <span class="parameters">(donttake123,123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NeoUATTestSuite-class-passed -->
+        </div> <!-- panel NeoUATTestSuite -->
+        <div panel-name="test-xml-NeoUATTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\lahiruh\AppData\Local\Temp\testng-eclipse--815069994\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\lahiruh\eclipse-workspace\com.neowebqahtml5.testneo\src\test\resources\TestSuites\NeoTestSuites\NeoUATestSuites.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;NeoUATTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.alaqahtml5.qa.base.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;NeoUAT&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;123&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;donttake123&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.alaqahtml5.qa.logoutpagetests.LogOutTest&quot;/&gt;
+      &lt;class name=&quot;com.alaqahtml5.qa.loginpagetests.SimpleLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest&quot;/&gt;
+      &lt;class name=&quot;com.alaqahtml5.qa.neowebtests.LeftNavigationTest&quot;/&gt;
+      &lt;class name=&quot;com.alaqahtml5.qa.neowebtests.LNMyAccountTest&quot;/&gt;
+      &lt;class name=&quot;com.alaqahtml5.qa.neowebtests.NeoWebLoginTest&quot;/&gt;
       &lt;class name=&quot;com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest&quot;/&gt;
+      &lt;class name=&quot;com.alaqahtml5.qa.neowebtests.LeftNavigationTest&quot;/&gt;
+      &lt;class name=&quot;com.alaqahtml5.qa.loginpagetests.AppTitleVerificationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- NeoUAT --&gt;
+&lt;/suite&gt; &lt;!-- NeoUATTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-NeoUATTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for NeoUATTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">NeoUAT (9 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-NeoUATTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for NeoUATTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-NeoUATTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for NeoUATTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_NeoUATTestSuite');
+function tableData_NeoUATTestSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'navigateToRegulerOLAO')
 data.setCell(0, 2, 'com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest')
-data.setCell(0, 3, 43950);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 145420);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'lnMyAccountTest')
+data.setCell(1, 2, 'com.alaqahtml5.qa.neowebtests.LNMyAccountTest')
+data.setCell(1, 3, 40805);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'leftNavigationTest')
+data.setCell(2, 2, 'com.alaqahtml5.qa.neowebtests.LeftNavigationTest')
+data.setCell(2, 3, 29298);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'lnMyAccountTest')
+data.setCell(3, 2, 'com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest')
+data.setCell(3, 3, 28898);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'logOutFromHtml5')
+data.setCell(4, 2, 'com.alaqahtml5.qa.logoutpagetests.LogOutTest')
+data.setCell(4, 3, 21723);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'logInTest')
+data.setCell(5, 2, 'com.alaqahtml5.qa.neowebtests.NeoWebLoginTest')
+data.setCell(5, 3, 21537);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'apptitleVerification')
+data.setCell(6, 2, 'com.alaqahtml5.qa.loginpagetests.AppTitleVerificationTest')
+data.setCell(6, 3, 15725);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'simpleLoginTest')
+data.setCell(7, 2, 'com.alaqahtml5.qa.loginpagetests.SimpleLoginTest')
+data.setCell(7, 3, 0);
+window.suiteTableData['NeoUATTestSuite']= { tableData: data, tableDiv: 'times-div-NeoUATTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-NeoUATTestSuite">
+              </div> <!-- times-div-NeoUATTestSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-NeoUATTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for NeoUATTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-NeoUATTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-NeoUATTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.alaqahtml5.qa.logoutpagetests.LogOutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, org.testng.TestRunner@299b9851)</span>
+                <span class="method-name">setUp(public void com.alaqahtml5.qa.logoutpagetests.LogOutTest.logOutFromHtml5(java.lang.String,java.lang....)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logOutFromHtml5(donttake123, 123)</span>
+                <span class="method-start">4575 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.alaqahtml5.qa.neo3rdpartywebtests.EdaaPageOpenTest.lnMyAccountTest(java.lang.String,...)</span>
+                <span class="method-start">26328 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">lnMyAccountTest(donttake123, 123)</span>
+                <span class="method-start">30463 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alaqahtml5.qa.neowebtests.LeftNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.alaqahtml5.qa.neowebtests.LeftNavigationTest.leftNavigationTest(java.lang.String,jav...)</span>
+                <span class="method-start">59372 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">leftNavigationTest(donttake123, 123)</span>
+                <span class="method-start">63572 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alaqahtml5.qa.neowebtests.LNMyAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.alaqahtml5.qa.neowebtests.LNMyAccountTest.lnMyAccountTest(java.lang.String,java.lang...)</span>
+                <span class="method-start">92876 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">lnMyAccountTest(donttake123, 123)</span>
+                <span class="method-start">96983 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alaqahtml5.qa.neowebtests.NeoWebLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.alaqahtml5.qa.neowebtests.NeoWebLoginTest.logInTest(java.lang.String,java.lang.Strin...)</span>
+                <span class="method-start">137794 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logInTest(donttake123, 123)</span>
+                <span class="method-start">141817 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.alaqahtml5.qa.onlineaccountoperning.NeoRegularOLAOPathTest.navigateToRegulerOLAO() t...)</span>
+                <span class="method-start">163358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">navigateToRegulerOLAO</span>
-                <span class="method-start">5686 ms</span>
+                <span class="method-start">167421 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alaqahtml5.qa.loginpagetests.AppTitleVerificationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.alaqahtml5.qa.loginpagetests.AppTitleVerificationTest.apptitleVerification(java.lang...)</span>
+                <span class="method-start">312864 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">apptitleVerification(donttake123, 123)</span>
+                <span class="method-start">316977 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
